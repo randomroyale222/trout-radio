@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trout Radio commands</title>
+<style>
+:root{--bg:#0f1719;--card:#172226;--line:#243338;--text:#e6eee8;--dim:#8ea3a6;--gold:#e8b84a;--teal:#43b6c4}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 "Segoe UI",system-ui,sans-serif}
+main{max-width:620px;margin:0 auto;padding:28px 16px 40px}
+h1{font-size:26px;margin:0 0 4px}
+.sub{color:var(--dim);margin:0 0 22px}
+section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:12px}
+h2{font-size:12px;letter-spacing:.9px;text-transform:uppercase;color:var(--dim);margin:0 0 8px}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 14px;align-items:baseline}
+dt{font-family:ui-monospace,Consolas,monospace;color:var(--teal);font-weight:600;white-space:nowrap}
+dd{margin:0}
+.note{color:var(--dim);font-size:14px}
+.gold{color:var(--gold)}
+footer{color:var(--dim);font-size:13px;text-align:center;margin-top:18px}
+</style></head>
+<body><main>
+<h1>🐟 Trout Radio</h1>
+<p class="sub">The stream's music. These work in chat on both Twitch and Kick.</p>
+
+<section><h2>Request songs</h2><dl>
+<dt>!sr song name</dt><dd>Request a song by name and artist (subs &amp; mods).</dd>
+<dt>!wrongsong</dt><dd>Take back your last request.</dd>
+<dt>!queue</dt><dd>See what's coming up.</dd>
+</dl></section>
+
+<section><h2>What's playing</h2><dl>
+<dt>!song</dt><dd>The song playing now.</dd>
+<dt>!lastsong</dt><dd>The song before this one.</dd>
+</dl></section>
+
+<section><h2>Chat power</h2><dl>
+<dt>!voteskip</dt><dd>Vote to skip the current song. Enough votes within 30 seconds and it's gone.</dd>
+<dt>!curators</dt><dd>Top curators: viewers whose requests got kept in the stream playlist.</dd>
+<dt>!mysongs</dt><dd>Which of your requests made it into the playlist.</dd>
+</dl></section>
+
+<section><h2>Channel points</h2><dl>
+<dt class="gold">Priority Song Request</dt><dd>Your song jumps the queue. Works for everyone, not just subs.</dd>
+<dt class="gold">Skip Song</dt><dd>Skip the current song right away.</dd>
+</dl></section>
+
+<section><h2>Mods</h2><dl>
+<dt>!skip</dt><dd>Skip the current song.</dd>
+<dt>!keep</dt><dd>Add the current song to the stream playlist (and credit whoever requested it).</dd>
+<dt>!vol 0-100</dt><dd>Set the music volume.</dd>
+</dl></section>
+
+<p class="note">Tip: request good songs. If the streamer keeps yours, you climb the curator leaderboard.</p>
+<footer>Trout Radio · <a href="privacy.html" style="color:inherit">privacy</a></footer>
+</main></body></html>
